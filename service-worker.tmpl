@@ -179,6 +179,8 @@ self.addEventListener('fetch', function(event) {
   }
 });
 
+<% } %>
+
 <% if (swToolboxCode) { %>
 // *** Start of auto-included sw-toolbox code. ***
 <%= swToolboxCode %>
@@ -188,7 +190,6 @@ self.addEventListener('fetch', function(event) {
 <% if (runtimeCaching) { %>
 // Runtime cache configuration, using the sw-toolbox library.
 <%= runtimeCaching %>
-<% } %>
 <% } %>
 
 <% if (importScripts) { %>
